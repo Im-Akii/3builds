@@ -1,6 +1,6 @@
 "use client";
 
-import { ServerNet } from "./server";
+import { SpacetimeNet } from "./spacetimeNet";
 import type { NetClient } from "./types";
 
 /**
@@ -13,7 +13,7 @@ import type { NetClient } from "./types";
  *   bindings are generated. Same six methods, one reducer each.
  */
 export function createNet(): NetClient {
-  return new ServerNet();
+  return new SpacetimeNet();
 }
 
 export * from "./types";
